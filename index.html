@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SeamCoin - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; margin: 0; background: #f9f9f9; color: #333; line-height: 1.6; }
+    header { background: #1a1a1a; color: #fff; padding: 2rem; text-align: center; }
+    header h1 { margin: 0; font-size: 2.5rem; }
+    header p { margin-top: 0.5rem; font-size: 1.2rem; color: #ccc; }
+    nav { margin-top: 1rem; }
+    nav a { color: #fff; margin: 0 1rem; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    main { padding: 2rem; max-width: 900px; margin: auto; }
+    section { margin-bottom: 3rem; }
+    h2 { font-size: 2rem; color: #1a1a1a; }
+    .cta, .contact { text-align: center; margin-top: 2rem; }
+    .cta a { text-decoration: none; background: #1a1a1a; color: #fff; padding: 1rem 2rem; border-radius: 6px; font-weight: bold; transition: background 0.3s; }
+    .cta a:hover { background: #444; }
+    form { display: flex; flex-direction: column; gap: 1rem; max-width: 500px; margin: 0 auto; }
+    input, textarea { padding: 0.75rem; font-size: 1rem; border: 1px solid #ccc; border-radius: 5px; }
+    button { background-color: #1a1a1a; color: #fff; border: none; padding: 1rem; font-weight: bold; border-radius: 6px; cursor: pointer; }
+    button:hover { background-color: #444; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>SeamCoin</h1>
+    <p>Empowering Teams to Make Seamless Collective Purchases</p>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="details.html">Details</a>
+      <a href="about.html">About Me</a>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Welcome to SeamCoin</h2>
+      <p>SeamCoin is a decentralized token designed to simplify and secure group payments, especially for teams where not everyone has access to digital wallets like Venmo or Cash App. It's a crypto layer that lets people pool funds transparently and equitably.</p>
+      <div class="cta">
+        <a href="details.html">Explore SeamCoin Features</a>
+      </div>
+    </section>
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <p>Have questions or want to join the SeamCoin beta program? Fill out the form below:</p>
+      <form>
+        <input type="text" name="name" placeholder="Your Name" required />
+        <input type="email" name="email" placeholder="Your Email" required />
+        <textarea name="message" rows="4" placeholder="Your Message" required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>
