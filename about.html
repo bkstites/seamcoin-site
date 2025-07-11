@@ -1,35 +1,126 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Me - SeamCoin</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SeamCoin - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <style>
-    body { font-family: 'Inter', sans-serif; margin: 0; background-color: #fdfdfd; color: #333; }
-    header { background-color: #1a1a1a; color: #fff; padding: 2rem; text-align: center; }
-    nav a { margin: 0 1rem; text-decoration: none; color: #fff; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    main { max-width: 800px; margin: 2rem auto; padding: 1rem; }
-    h1 { text-align: center; color: #1a1a1a; }
-    .bio { background: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05); }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f4f6f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #3b82f6, #9333ea);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.8rem;
+    }
+    nav {
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin: 0 1.5rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+    nav a:hover {
+      color: #3b82f6;
+    }
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin: 1rem auto;
+    }
+    .cta-button {
+      display: inline-block;
+      background: #3b82f6;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: bold;
+      text-decoration: none;
+      margin-top: 1.5rem;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 2rem 1rem;
+      gap: 1.5rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      max-width: 300px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      text-align: center;
+    }
+    .card i {
+      font-size: 2rem;
+      color: #3b82f6;
+      margin-bottom: 0.75rem;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      color: #666;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>About Me</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="details.html">Details</a>
-      <a href="about.html">About Me</a>
-    </nav>
+    <h1>SeamCoin</h1>
+    <p>Decentralized Payments for Collective Teams</p>
   </header>
-  <main>
-    <div class="bio">
-      <p>Hello! I'm Bryan Stites, a technologist and entrepreneur passionate about leveraging decentralized tools to solve real-world inclusion challenges. With a background in IT risk management, paramedicine, and analytics, I’ve spent the last decade driving innovations that bridge the gap between people and technology.</p>
-      <p>SeamCoin was born from frustration—watching teams struggle to organize simple purchases because someone didn’t have access to PayPal, Venmo, or traditional banks. My goal is to make crypto more human, more accessible, and more useful for the people who need it most.</p>
-      <p>When I’m not building solutions like SeamCoin, you’ll find me exploring the intersection of AI, compliance, and community engagement.</p>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="details.html">Details</a>
+    <a href="about.html">About Me</a>
+  </nav>
+  <section class="hero">
+    <h2>Making Group Payments Seamless</h2>
+    <p>SeamCoin helps teams make shared purchases by pooling crypto funds transparently and securely—even if some members can’t use apps like Venmo.</p>
+    <a class="cta-button" href="details.html">Explore the Technology</a>
+  </section>
+  <section class="features">
+    <div class="card">
+      <i class="fas fa-users"></i>
+      <h3>Group Power</h3>
+      <p>Track contributions and voting with smart contracts.</p>
     </div>
-  </main>
+    <div class="card">
+      <i class="fas fa-lock"></i>
+      <h3>Secure</h3>
+      <p>Funds are only released when team-defined rules are met.</p>
+    </div>
+    <div class="card">
+      <i class="fas fa-globe"></i>
+      <h3>Inclusive</h3>
+      <p>Designed for users without access to traditional banking tools.</p>
+    </div>
+  </section>
+  <footer>
+    &copy; 2025 SeamCoin. All rights reserved.
+  </footer>
 </body>
 </html>
