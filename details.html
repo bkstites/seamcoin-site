@@ -1,49 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>SeamCoin - Details</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
-    body { font-family: 'Inter', sans-serif; background: #fdfdfd; color: #333; margin: 0; padding: 0; }
-    header { background-color: #1a1a1a; color: #fff; padding: 2rem; text-align: center; }
-    nav a { margin: 0 1rem; text-decoration: none; color: #fff; font-weight: bold; }
-    nav a:hover { text-decoration: underline; }
-    main { max-width: 900px; margin: 2rem auto; padding: 1rem; }
-    h1, h2 { text-align: center; color: #1a1a1a; }
-    ul { list-style-type: disc; padding-left: 1.5rem; }
-    .card { background: #fff; padding: 2rem; border-radius: 10px; box-shadow: 0 2px 10px rgba(0,0,0,0.05); margin-bottom: 2rem; }
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f4f6f9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(135deg, #3b82f6, #9333ea);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+    }
+    nav {
+      background: #ffffff;
+      display: flex;
+      justify-content: center;
+      padding: 1rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav a {
+      margin: 0 1.5rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 600;
+    }
+    nav a:hover {
+      color: #3b82f6;
+    }
+    .content {
+      max-width: 800px;
+      margin: 2rem auto;
+      padding: 2rem;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    }
+    h2 {
+      color: #3b82f6;
+    }
   </style>
 </head>
 <body>
   <header>
-    <h1>SeamCoin Features</h1>
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="details.html">Details</a>
-      <a href="about.html">About Me</a>
-    </nav>
+    <h1>SeamCoin: Economic Details</h1>
   </header>
-  <main>
-    <div class="card">
-      <h2>Economic Overview</h2>
-      <p>SeamCoin operates on a transparent smart contract framework, where each user’s contribution is visible and logged on-chain. Transactions only proceed when the group-defined threshold is met—either 100% participation or majority vote, depending on configuration.</p>
-    </div>
-    <div class="card">
-      <h2>Key Features</h2>
-      <ul>
-        <li>Equitable pooling of crypto funds for group purchases</li>
-        <li>Automatic fund release based on team confirmations</li>
-        <li>Transaction immutability and audit-friendly logging</li>
-        <li>Works on Ethereum-compatible chains</li>
-        <li>Supports rotating or elected custodians</li>
-      </ul>
-    </div>
-    <div class="card">
-      <h2>Inclusion First</h2>
-      <p>SeamCoin supports simplified onboarding, ideal for teams with mixed access to fintech tools or banking services.</p>
-    </div>
-  </main>
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="details.html">Details</a>
+    <a href="about.html">About Me</a>
+  </nav>
+  <div class="content">
+    <h2>Economic Overview</h2>
+    <p>SeamCoin operates on a transparent smart contract framework. Each user’s contribution is logged on-chain, and transactions only proceed when the group-defined threshold is met—such as unanimous or majority confirmation.</p>
+    
+    <h2>Key Features</h2>
+    <ul>
+      <li>Equitable pooling of crypto funds for group purchases</li>
+      <li>Automatic fund release based on team confirmations</li>
+      <li>Transaction immutability and audit-friendly logging</li>
+      <li>Ethereum-compatible deployment</li>
+      <li>Flexible custodianship (rotating/elected)</li>
+    </ul>
+
+    <h2>Inclusion First</h2>
+    <p>SeamCoin is designed to include users who may lack access to traditional fintech platforms. It supports fair contributions from all members regardless of banking status.</p>
+  </div>
 </body>
 </html>
